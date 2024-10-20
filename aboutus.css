@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    background-color: #f7f7f7;
+    color: #c06e6e;
+}
+
+header {
+    background-color: #af6d6f;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+}
+
+header h1 {
+    color: #fff;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 1.2em;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffebcc;
+}
+
+/* About Section */
+#about {
+    padding: 60px 20px;
+    background-color: #e4d9d9;
+    animation: fadeIn 1.2s ease-in-out;
+    
+}
+
+#about h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #440a0c;
+    margin-bottom: 30px;
+    animation: slideDown 1s ease;
+}
+
+#about p {
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.about-box {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.about-box h3 {
+    font-size: 1.8em;
+    color: #f09a9d;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.about-box p {
+    font-size: 1.1em;
+    color: #666;
+    text-align: center;
+    line-height: 1.7;
+}
+
+.about-box ul {
+    list-style: disc;
+    margin-left: 20px;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #f09a9d;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+footer p {
+    font-size: 1em;
+    margin: 0;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.underline
+{
+    text-decoration: underline;
+}
